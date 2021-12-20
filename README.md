@@ -9,5 +9,5 @@
   ```
   npm start
   ```
-### Guide
+### Guide:
 #### https://telegra.ph/SpaceMan-Platform-12-20
