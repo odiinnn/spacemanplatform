@@ -1,0 +1,501 @@
+body {
+    background-color: #F5F5F5;
+}
+
+.App {
+  text-align: center;
+
+}
+
+.texta {
+    color: #3D18BB;
+    font-family: 'Roboto Mono', monospace;
+    font-family: 'Rubik', sans-serif;
+}
+
+.texta1 {
+    color: #3D18BB;
+    font-family: 'Roboto Mono', monospace;
+    font-family: 'Rubik', sans-serif;
+    font-size: calc(20px + 3vmin);
+}
+
+.texta2 {
+    color: #3D18BB;
+    font-family: 'Roboto Mono', monospace;
+    font-family: 'Rubik', sans-serif;
+    font-size: calc(20px + 1.5vmin);
+}
+
+.texta3 {
+    color: #3D18BB;
+    font-family: 'Roboto Mono', monospace;
+    font-family: 'Rubik', sans-serif;
+    font-size: calc(15px + 0.1vmin);
+
+}
+
+.texta4 {
+    color: #3D18BB;
+    font-family: 'Roboto Mono', monospace;
+    font-family: 'Rubik', sans-serif;
+    font-size: calc(18px + 0.3vmin);
+    margin-bottom: -3.5%;
+    margin-left: 5%;
+
+}
+
+.App-logo {
+  height: 13vmin;
+  width: 13vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+
+.App-header {
+
+  min-height: 10vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  font-size: calc(10px + 2vmin);
+}
+
+.webwind{
+    margin-top: 5%;
+}
+
+.top {
+    background-color: ;
+  min-height: 1vh;
+  height: 18vh;
+  display: flex;
+  flex-direction: column;
+  font-size: calc(10px + 3vmin);
+  border-bottom: solid #3D18BB;
+  border-bottom-width: 0.07em;
+  width: 80vh;
+
+}
+
+.top1 {
+
+
+  display: flex;
+  border-bottom: solid #FFFFFF;
+  border-bottom-width: 0.05em;
+  width: 40vh;
+  border-radius: 0px;
+  margin-top: 2%;
+
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.content {
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+
+    margin-bottom: 5%;
+    margin-top: 5%;
+}
+
+.content1 {
+display: flex;
+flex-direction: column;
+align-items: left;
+justify-content: left;
+text-align: left;
+
+    margin-bottom: 5%;
+}
+
+.blockcontent {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+    width: 60vh;
+    height: 60vh;
+    border: solid #FFFFFF;
+  border-width: 0.2em;
+  border-radius: 30px;
+  background-color: #5970B4;
+  margin-bottom: 5%;
+}
+
+.blockcontent1 {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+    width: 60vh;
+    height: 70vh;
+    border: solid #FFFFFF;
+  border-width: 0.2em;
+  border-radius: 30px;
+  background-color: #5970B4;
+}
+
+.blockcontent2 {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+    width: 30vh;
+    height: 5vh;
+    border: solid #3D18BB;
+  border-width: 0.2em;
+  border-radius: 30px;
+
+}
+
+.blockcontent4 {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+    width: 20vh;
+    height: 4vh;
+    border: solid #3D18BB;
+  border-width: 0.2em;
+  border-radius: 30px;
+
+}
+
+.blockcontent3 {
+display: flex;
+flex-direction: column;
+justify-content: top;
+align-items: center;
+    width: 50vh;
+    height: 25vh;
+    border: solid #FFFFFF;
+  border-width: 0.2em;
+  border-radius: 30px;
+  background-color: #5970B4;
+  margin-top: 15%;
+  margin-left: 37%;
+}
+
+.blockcontent5 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 2%;
+
+}
+
+.inputstyle {
+    border: 2px solid #33006E; border-radius: 25px; width: 347px;
+    height: 50px; padding-left:45px; margin: 2%; margin-top: 6%;
+
+}
+
+.imgstyletokensale {
+    width: 50px;
+    height: 50px;
+    margin-bottom: -4%;
+    }
+
+#buyTokens1 {
+    background-image:url(https://s99.info/static/admin/img/logo345.png);
+    background-repeat: no-repeat;
+    background-position: 8px 8px;
+    background-width: 5px;
+    background-height: 5px;
+}
+
+#price1 {
+    background-image:url(https://s99.info/static/admin/img/bnb1.png);
+    background-repeat: no-repeat;
+    background-position: 8px 8px;
+    background-width: 5px;
+    background-height: 6px;
+}
+
+.row_mode1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 0 -30px;
+    margin-top: 0 20px;
+}
+
+.tylo {
+    display: flex;
+    flex-direction: row;
+}
+
+.tokensalenamee{
+      font-family: 'Roboto Mono', monospace;
+    font-family: 'Rubik', sans-serif;
+      color: white;
+      margin-top:0%; white-space: pre; margin-bottom:-3%;
+
+    }
+
+    .tokensalenameee{
+      font-family: 'Roboto Mono', monospace;
+    font-family: 'Rubik', sans-serif;
+      color: white;
+      margin-top:14%; white-space: pre;
+      font-size: calc(1px + 3vmin);
+    }
+
+.namee{
+      font-family: 'Roboto Mono', monospace;
+    font-family: 'Rubik', sans-serif;
+      color: white;
+    }
+
+    .namee a {
+    font-family: 'Roboto Mono', monospace;
+      font-family: 'Rubik', sans-serif;
+      color: dark;
+      letter-spacing: 3px;
+    }
+
+    .namee p {
+    font-family: 'Roboto Mono', monospace;
+      font-family: 'Rubik', sans-serif;
+      color: white;
+      letter-spacing: 3px;
+    }
+
+    .namee button {
+    font-family: 'Roboto Mono', monospace;
+      font-family: 'Rubik', sans-serif;
+      color: dark;
+      letter-spacing: 3px;
+    }
+
+.floatingbuttonnn {
+        background: white;
+        border: 2px solid #3D18BB;
+        text-decoration: none;
+        display: inline-block;
+        width: 150px;
+        height: 40px;
+        line-height: 40px;
+        border-radius: 45px;
+        margin: 0px 0px;
+        font-family: 'Roboto Mono', monospace;
+      font-family: 'Rubik', sans-serif;
+        font-size: 20px;
+        text-transform: uppercase;
+        text-align: center;
+        letter-spacing: 3px;
+        font-weight: 400;
+        color: #3030A2;
+        box-shadow: 0 8px 15px rgba(0, 0, 0, .1);
+        transition: .3s;
+         margin-top: 10%;
+         margin-bottom: 2%;
+
+
+      }
+      .floatingbuttonnn:hover {
+        background: #3D82BB;
+        box-shadow: 0 15px 20px #3D18BB;
+        color: white;
+      }
+
+      .floatingbuttonnn a {
+        color: white;
+      }
+
+.floatingbuttonnnnn {
+        background: white;
+        border: 2px solid #3D18BB;
+        text-decoration: none;
+        display: inline-block;
+        width: 180px;
+        height: 40px;
+        line-height: 40px;
+        border-radius: 45px;
+        margin: 0px 0px;
+        font-family: 'Roboto Mono', monospace;
+      font-family: 'Rubik', sans-serif;
+        font-size: 20px;
+        text-transform: uppercase;
+        text-align: center;
+        letter-spacing: 3px;
+        font-weight: 400;
+        color: #3030A2;
+        box-shadow: 0 8px 15px rgba(0, 0, 0, .1);
+        transition: .3s;
+         margin-top: 10%;
+         margin-bottom: 2%;
+
+
+      }
+      .floatingbuttonnnnn:hover {
+        background: #3D82BB;
+        box-shadow: 0 15px 20px #3D18BB;
+        color: white;
+      }
+
+      .floatingbuttonnnnn a {
+        color: white;
+      }
+
+.modalwind {
+    display: flex;
+    margin-left: 300%;
+    margin-top: -700%;
+
+    z-index: 2;
+
+}
+
+
+.floatingbuttonnnn {
+        background: #fff;
+        border: 2px solid #3D18BB;
+        text-decoration: none;
+        display: inline-block;
+        width: 7vmin;
+        height: 7vmin;
+
+        border-radius: 45px;
+        margin: 0px 0px;
+
+        box-shadow: 0 8px 15px rgba(0, 0, 0, .1);
+        transition: .3s;
+         margin-top: 2%;
+         margin-bottom: 2%;
+         margin-left:90%;
+
+      }
+      .floatingbuttonnnn:hover {
+        background: #3D82BB;
+        box-shadow: 0 15px 20px #3D18BB;
+        color: white;
+
+      }
+
+      .floatingbuttonnnn a {
+        color: white;
+      }
+
+      .App-open {
+  height: 8vmin;
+  width: 8vmin;
+  margin-left: -11%;
+  margin-top: -12%;
+
+}
+
+.App-open1 {
+  height: 3vmin;
+  width: 3vmin;
+  -webkit-transition: -webkit-transform .8s ease-in-out;
+          transition:         transform .8s ease-in-out;
+
+
+}
+
+.App-open1:hover {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
+
+
+
+
+.prikol {
+    margin-top: -7%;
+}
+
+.prikol1 {
+        background: #3030A2;
+        border: 2px solid #33006E;
+        text-decoration: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 4vmax;
+        height: 4vmax;
+
+        border-radius: 45px;
+        margin: 0px 0px;
+
+        box-shadow: 0 8px 15px rgba(0, 0, 0, .1);
+        transition: .3s;
+         margin-top: 2%;
+         margin-bottom: 2%;
+
+
+      }
+      .prikol1:hover {
+        background: #F37D7E;
+        box-shadow: 0 15px 20px rgba(243, 125, 126, 255);
+        color: white;
+
+      }
+
+      .prikol1 a {
+        color: white;
+      }
+
+.prikol3 {
+    display: flex;
+    flex-direction: column;
+    align-items: top;
+    justify-content: top;
+
+}
+
+.hide {
+    overflow: hidden;
+	position: relative;
+	height: 62px;
+}
+
+.link {
+
+    width: calc(0.5px + 2vmin);
+    height: calc(0.5px + 2vmin);
+    margin-top: 2%;
+    flex-direction: row;
+
+
+}
+
+.topup {
+    font-family: 'Roboto Mono', monospace;
+    font-family: 'Rubik', sans-serif;
+      color: white;
+      padding-bottom: 5px;
+      white-space: pre;
+      font-size: calc(1px + 1.5vmin);
+
+}
+
+.account{
+    margin-top:5%;
+
+}

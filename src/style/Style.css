@@ -1,0 +1,84 @@
+*{
+  margin: 0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 70vh;
+}
+
+.container{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container .spaceman {
+  position: relative;
+  width: 600px;
+  height: 350px;
+  margin: 20px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background: linear-gradient(45deg, #3D18BB, #7094ce);
+}
+
+.container .spaceman img{
+  position: absolute;
+  bottom: 0;
+  left:50%;
+  transform: translateX(-50%);
+  height: 400px;
+  transition: 0.5s;
+}
+
+.container .spaceman:hover img {
+  left: 75%;
+  height: 400px;
+  border: solid #3D18BB;
+  border-width: 0.07em;
+  box-shadow: 0 20px 30px rgba(41,0,92, .9);
+}
+
+.container .spaceman .content {
+    position: relative;
+    width: 50%;
+    left: 20%;
+    padding: 20px 20px 20px 40px;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+}
+
+.container .spaceman:hover .content {
+    left: 0;
+    opacity: 1;
+    visibility: visible;
+}
+
+.container .spaceman .content h2{
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 2.2em;
+    line-height: 1em;
+}
+
+.container .spaceman .content p{
+    color: #fff;
+}
+
+.container .spaceman .content a{
+    color: #111;
+    background: #fff;
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 10px;
+    text-decoration: none;
+    font-weight: 700;
+}
