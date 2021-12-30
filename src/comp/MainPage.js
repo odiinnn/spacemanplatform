@@ -2,6 +2,7 @@ import '../style/Style.css';
 import Spaceman1 from "../image/spaceman1.png";
 import Spaceman2 from "../image/spaceman2.png";
 import Nav from './Nav.js';
+import Deploy from './dpl.js';
 
 
 
@@ -32,6 +33,7 @@ function MainPage() {
         </div>
     </div>
     </body>
+    <Deploy />
     </>
     );
 }

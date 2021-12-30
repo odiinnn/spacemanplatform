@@ -11,12 +11,11 @@ import { ContractMethod, ContractNftMethod, MintNft } from "../hooks";
 
 const simpleNftAddress = '0x0219d9922E4945D116fA657275B133C4C00256e3';
 
-var uri = 'https://raw.githubusercontent.com/odiinnn/nfttest/main/0.json';
 
 const simpleNftInterface = new ethers.utils.Interface(simpleNftAbi);
 const contract = new Contract(simpleNftAddress, simpleNftInterface);
 
-export default function NftMint(props) {
+export default function NftMint2(props) {
 
     const { activateBrowserWallet, account } = useEthers();
     const etherBalance = useEtherBalance(account);
@@ -27,21 +26,22 @@ export default function NftMint(props) {
 
 
     function mintnft(){
-
-            AwardItem(account, 'https://raw.githubusercontent.com/odiinnn/nfttest/main/0.json')
+        const urii = document.getElementById("input").value
+            AwardItem(account, urii)
 
     }
 
 
     return (
-    <>
-        <div class="switch">
-          <input id="cmn-toggle-2" className="cmn-toggle cmn-toggle-yes-no" type="checkbox" onClick={ () => props.handleClick('nftmint2')} />
-          <label for="cmn-toggle-2" data-on="Create default" data-off="Your uri"></label>
-        </div>
-        <button onClick={mintnft} className='floatingbuttonnn'>Mint</button>
+        <>
+            <div class="switch">
+              <input id="cmn-toggle-1" className="cmn-toggle cmn-toggle-yes-no" type="checkbox" onClick={ () => props.handleClick('nftmint1')} />
+              <label for="cmn-toggle-1" data-on="Fuck" data-off="Default uri"></label>
+            </div>
+            <input id='input' className="inputstyle" placeholder='Input uri...'  />
+            <button onClick={mintnft} className='floatingbuttonnn'>Mint</button>
+        </>
 
-    </>
     )
 
 
