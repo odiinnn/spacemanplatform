@@ -9,6 +9,8 @@ import NftMint from "./nftmint.js";
 import NftMint2 from "./nftmint2.js";
 import Spaceman1 from "../image/spaceman1.png";
 import React, { useState } from 'react'
+import GoodMint from './GoodMint.js';
+
 
 function Test(){
 return(
@@ -62,7 +64,7 @@ function Home(props) {
                             return <NftMint  handleClick={handleClick}/>
                                   }
                       })()}
-
+                <GoodMint />
 
                 </div>
             </div>

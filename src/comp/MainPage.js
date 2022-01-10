@@ -1,9 +1,15 @@
+import axios from 'axios'
 import '../style/Style.css';
 import Spaceman1 from "../image/spaceman1.png";
 import Spaceman2 from "../image/spaceman2.png";
 import Nav from './Nav.js';
 import Deploy from './dpl.js';
+import GoodMint from './GoodMint.js';
 
+async function fetchUri() {
+    const response = await axios.get('https://raw.githubusercontent.com/odiinnn/nfttest/main/1.json')
+    console.log(response.data.name)
+}
 
 
 function MainPage() {
@@ -34,6 +40,10 @@ function MainPage() {
     </div>
     </body>
     <Deploy />
+    <button onClick={fetchUri} className='floatingbuttonnn'>Uri</button>
+
+
+
     </>
     );
 }
