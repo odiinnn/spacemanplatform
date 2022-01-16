@@ -15,7 +15,7 @@ var valueInput
 var errorr
 var chainName = 'Undefined'
 var chainMessage = 'Please connect your wallet'
-const addressOfDonation = '0x7b7850Ef7C43ee0F55B94E87ff29025DE675F208'
+const addressOfDonation = '0x009d976b070eAbC3686B277a5F74eBe93E970FbA'
 const fontStyles1 = {color: '#000000', fontSize: '30px'};
 const fontStyles2 = {color: 'blue', fontSize: '40px'};
 const fontStyles3 = {color: 'yellow', fontSize: '40px'};
@@ -51,27 +51,28 @@ function Donate() {
 
     useEffect(() => {
         fetchChain()
-    },[chainId, border])
+        console.log(chainId)
+    },[chainId, border, ''])
 
 
 
     function fetchChain(){
         setDisabled(true)
-        if ((chainId === '56')){ ///here you can swap 56 to 97 and check scripts for bsc testnet network
-            if((border === true)){
+        if ((chainId == '56')){ ///here you can swap 56 to 97 and check scripts for bsc testnet network
+            if((border == true)){
                 setDisabled(false)
                 chainName = chainInfo.bsc.chain
                 chainMessage = ''
-            } else if((border !== true)){
+            } else if((border != true)){
                 chainName = chainInfo.bsc.chain
                 chainMessage = chainInfo.bsc.msg
             }
-        }else if ((chainId === '1')){
-            if((border !== true)){
+        }else if ((chainId == '1')){
+            if((border != true)){
                 setDisabled(false)
                 chainName = chainInfo.eth.chain
                 chainMessage = ''
-            } else if((border === true)){
+            } else if((border == true)){
                 chainName = chainInfo.eth.chain
                 chainMessage = chainInfo.eth.msg
             }
@@ -82,7 +83,7 @@ function Donate() {
         setCorrectInput(true)
         valueInput = document.getElementById("valueOf").value
         let check = valueInput/1
-        if (check !== valueInput ) {
+        if (check != valueInput ) {
             setCorrectInput(false)
         } else {
             setCorrectInput(true)
@@ -102,7 +103,7 @@ function Donate() {
             await sendTransaction({to: addressOfDonation, value: valueOfTransaction})
             try {
                 errorr = Error()
-                if (errorr === '') {
+                if (errorr == '') {
                     setGoodTransaction(true)
                     setDisabled(false)
                     setLoad(false)
