@@ -1,20 +1,15 @@
-import React, {Suspense, lazy} from 'react';
-import logo from './image/logo.svg';
+import React, {Suspense} from 'react';
 import './style/App.css';
 import Nav from './comp/Nav.js';
 import Footer from './comp/Footer.js';
 import Home from './comp/Home.js';
-import Create from './comp/Create.js';
-import arrows from './image/arrows.png';
+import Donate from './comp/Donate.js';
 import MainPage from "./comp/MainPage.js";
 //import circle from './1.png'
 import {
   BrowserRouter,
   Routes,
   Route,
-  Link,
-  useRouteMatch,
-  useParams
 } from "react-router-dom";
 import { Web3ReactProvider } from '@web3-react/core'
 import Web3 from 'web3'
@@ -34,6 +29,7 @@ function App() {
         <Routes>
         <Route path="/" element={<MainPage />} />
         <Route path="/create" element={<Home />} />
+        <Route path="/donate" element={<Donate />} />
 
         </Routes>
 

@@ -1,14 +1,11 @@
-import React, { Component } from 'react';
-import blockcontent from '../style/App.css';
+import React from 'react';
 import '../style/App.css';
-import ReactDOM from 'react-dom';
 import Modal from 'react-modal';
 import meta from '../image/Meta.svg.png';
 import Web3_pack from './Web3pack.js';
 import cross from '../image/cross.png';
 
 function Modal_window(){
-  var subtitle;
   const [modalIsOpen,setIsOpen] = React.useState(false);
   function openModal() {
     setIsOpen(true);

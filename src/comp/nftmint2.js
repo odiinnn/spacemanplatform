@@ -1,30 +1,19 @@
 import { useState } from "react";
-import { ethers } from 'ethers';
 import '../App.css';
-import { formatEther } from "@ethersproject/units";
-import { useEthers, useEtherBalance } from "@usedapp/core";
-import { useContractCall, useContractFunction } from "@usedapp/core";
-import web3 from 'web3';
-import simpleNftAbi from "../abi/NftMint.json";
-import { Contract } from "@ethersproject/contracts";
-import { ContractMethod, ContractNftMethod, MintNft } from "../hooks";
+import { useEthers } from "@usedapp/core";
+import { ContractNftMethod, Hash, Error } from "../hooks";
 import GoodMint from './GoodMint.js';
 
-
-const simpleNftAddress = '0x0219d9922E4945D116fA657275B133C4C00256e3';
 
 var urii = ''
 var state = true;
 var state2 = true;
-
-
-const simpleNftInterface = new ethers.utils.Interface(simpleNftAbi);
-const contract = new Contract(simpleNftAddress, simpleNftInterface);
+var hash = '';
+var errorr
 
 export default function NftMint2(props) {
 
-    const { activateBrowserWallet, account } = useEthers();
-    const etherBalance = useEtherBalance(account);
+    const { account } = useEthers();
 
     const { state: too, uri, send: AwardItem } =
         ContractNftMethod("awardItem");
@@ -38,7 +27,27 @@ export default function NftMint2(props) {
         state = true
         urii = document.getElementById("input").value
         await AwardItem(account, urii)
-        state2 = false
+        try {
+            hash = Hash()
+            try{
+                errorr = Error()
+                if (errorr === '') {
+                    state2 = false
+                }
+                else {
+                    state2 = true
+                    setIsMinting(false)
+                }
+            } catch(e){
+                errorr = e
+                setIsMinting(false)
+                state2 = false
+            }
+        } catch(e)
+        {
+            console.log('error', e)
+        }
+
     }
 
 
@@ -55,8 +64,9 @@ export default function NftMint2(props) {
                     state={state}
                     state2={state2}
                     uri={urii}
+                    hash={hash}
                       />
-                : <></>
+                : <p>{errorr}</p>
             }
         </>
 

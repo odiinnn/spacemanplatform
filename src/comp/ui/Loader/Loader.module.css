@@ -4,7 +4,7 @@
     border-radius: 50%;
     border: 3px dashed #3D18BB;
     animation: rotate 2.5s infinite linear;
-    margin-bottom: 17%;
+
 }
 
 @keyframes rotate {
@@ -17,6 +17,7 @@
 }
 
 .text {
+    margin-top: 17%;
     color: #3D18BB;
     font-size: calc(5px + 2vmin);
 }

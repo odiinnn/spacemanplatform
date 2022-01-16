@@ -228,11 +228,12 @@ align-items: center;
 }
 
 #price1 {
-    background-image:url(https://s99.info/static/admin/img/bnb1.png);
+    background-image:url(https://ie.wampi.ru/2022/01/13/bnb.png);
     background-repeat: no-repeat;
     background-position: 8px 8px;
     background-width: 5px;
-    background-height: 6px;
+    background-height: 5px;
+    background-size: 32px 32px;
 }
 
 .row_mode1 {
@@ -497,5 +498,8 @@ align-items: center;
 
 .account{
     margin-top:5%;
+}
 
+.infoLoad{
+    margin-top: 10%;
 }

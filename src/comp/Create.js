@@ -1,6 +1,4 @@
-import logo from '../image/logo.svg';
 import '../style/App.css';
-import arrows from '../image/arrows.png'
 import Nav1 from './Nav1.js';
 
 const Create = (props) => (

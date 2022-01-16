@@ -1,6 +1,3 @@
-import { useEffect, useState } from 'react';
-import { useWeb3React } from '@web3-react/core';
-import { injected } from "./Coonnector";
 import { formatEther } from "@ethersproject/units";
 import { useEthers, useEtherBalance } from "@usedapp/core";
 import '../style/App.css';
@@ -10,11 +7,9 @@ import llink from '../image/link.png'
 function Account() {
 
 
-  const { activateBrowserWallet, account } = useEthers();
+  const { account } = useEthers();
   const etherBalance = useEtherBalance(account);
-  function handleConnectWallet() {
-    activateBrowserWallet();
-  }
+
 
 
     return(
@@ -31,7 +26,7 @@ function Account() {
                 <div className='blockcontent4'>
                     <div className='row_mode1'>
 
-                        <img src={llink} className='link' />
+                        <img src={llink} className='link' alt='' />
                         <a href={'https://bscscan.com/addres/'+account} className='texta3'>
                         {account &&
                               `${account.slice(0, 6)}...${account.slice(

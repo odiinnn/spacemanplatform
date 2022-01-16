@@ -1,36 +1,21 @@
-import React, { Component } from 'react';
-import blockcontent from '../style/App.css';
+import React from 'react';
 import '../style/App.css';
-import ReactDOM from 'react-dom';
 import Modal from 'react-modal';
-import meta from '../image/Meta.svg.png';
-import Web3_pack from './Web3pack.js';
 import NewMintItem from './NewMintItem.js';
-import cross from '../image/cross.png';
 import Loader from './ui/Loader/Loader.js';
-import axios from 'axios';
-
-var response = ''
-var uri = 'https://raw.githubusercontent.com/odiinnn/nfttest/main/0.json';
 
 
 function GoodMint(props){
 
   const [modalIsOpen,setIsOpen] = React.useState(props.state);
-  function openModal() {
-    setIsOpen(true);
-  }
 
-  function afterOpenModal() {
-    // references are now sync'd and can be accessed.
-    <Content />
+    function afterOpenModal() {
+        <Content />
+        }
 
-  }
-
-  function closeModal(){
+    function closeModal(){
     setIsOpen(false);
-  }
-
+    }
 
     return (
       <div>
@@ -58,6 +43,7 @@ function GoodMint(props){
                 : <div style={{marginBottom: '20%'}}>
                         <NewMintItem
                             uri={props.uri}
+                            hash={props.hash}
                         />
                     </div>
             }
@@ -70,7 +56,7 @@ function GoodMint(props){
 
 function Content() {
     return(
-        <div className='blockcontent'>agfhkjgh</div>
+        <div className='blockcontent'>Test</div>
 
     );
 

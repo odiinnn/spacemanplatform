@@ -1,26 +1,18 @@
-import { useEffect, useState } from 'react';
-import { useWeb3React } from '@web3-react/core';
-import { injected } from "./Coonnector";
-import { formatEther } from "@ethersproject/units";
-import { useEthers, useEtherBalance } from "@usedapp/core";
+import { useEthers } from "@usedapp/core";
 import '../style/App.css';
-import llink from '../image/link.png'
 
 
 function Web3_pack() {
 
-
-
-  const { activateBrowserWallet, account } = useEthers();
-  const etherBalance = useEtherBalance(account);
-  function handleConnectWallet() {
+    const { activateBrowserWallet, account } = useEthers();
+    function handleConnectWallet() {
     activateBrowserWallet();
-  }
+    }
 
-  const { accountt, deactivate } = useEthers();
-  function handleDeactivateAccount() {
+    const { deactivate } = useEthers();
+    function handleDeactivateAccount() {
     deactivate();
-  }
+    }
 
     return(
 

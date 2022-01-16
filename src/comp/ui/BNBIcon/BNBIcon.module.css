@@ -1,0 +1,8 @@
+.bnb {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 11 px;
+    height: 11 px;
+}
